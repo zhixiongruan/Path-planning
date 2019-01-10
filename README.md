@@ -1,5 +1,15 @@
 # CarND-Path-Planning-Project
 Self-Driving Car Engineer Nanodegree Program
+
+## My Implementation
+I refer to the Q&A video content offered by Aaron and David to complete this project.They provide very useful code.Based on this, I realized the prediction and behavior planning.
+<img src="./img/20190110222058.png" width="400px">
+
+In the prediction module, I analyzed the situation of 3 lanes based on the sensor fusion data and the condition of the surrounding vehicles. It is safe to judge whether to proceed forward or turn left or turn right.
+
+In the behavior planning module, I plan the behavior of the vehicle based on the judgment of the prediction module: whether the vehicle can safely turn left or right, and whether the vehicle needs to slow down. Here, I also set the acceleration and limit the maximum speed.
+
+In the trajectory generation module, I used the code in the video.This code does the calculation of the trajectory based on the speed and lane output from the behavior, car coordinates and past path points.
    
 ### Simulator.
 You can download the Term3 Simulator which contains the Path Planning Project from the [releases tab (https://github.com/udacity/self-driving-car-sim/releases/tag/T3_v1.2).
@@ -137,6 +147,4 @@ still be compilable with cmake and make./
 
 ## How to write a README
 A well written README file can enhance your project and portfolio.  Develop your abilities to create professional README files by completing [this free course](https://www.udacity.com/course/writing-readmes--ud777).
-
-## My Implementation
 
